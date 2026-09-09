@@ -195,7 +195,7 @@ body {
 
     color: #cccccc;
 
-    font-size: clamp(.9rem, 1.2vw, 1.3rem);
+    font-size: clamp(1.2rem, 1.7vw, 1.8rem);
 
     line-height: 1.3;
 
