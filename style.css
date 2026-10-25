@@ -289,3 +289,36 @@ body {
     transition: width 1s linear;
 
 }
+
+/* Clock and date in the header */
+
+.header {
+    position: relative;
+}
+
+.corner-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4af37;
+    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.clock {
+    left: 1rem;
+    text-align: left;
+}
+
+.calendar {
+    right: 1rem;
+    text-align: right;
+}
+
+.corner-label {
+    color: #aaaaaa;
+    font-size: 0.65em;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
