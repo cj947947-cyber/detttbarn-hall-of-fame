@@ -344,3 +344,26 @@ setInterval(updateTimer,1000);
 
 // Google Sheet refresh timer
 setInterval(loadRecords, refreshTime);
+
+// Update the current time and date
+
+function updateClock() {
+    const now = new Date();
+
+    document.getElementById("current-time").textContent =
+        now.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            second: "2-digit"
+        });
+
+    document.getElementById("current-date").textContent =
+        now.toLocaleDateString("en-US", {
+            month: "numeric",
+            day: "numeric",
+            year: "numeric"
+        });
+}
+
+updateClock();
+setInterval(updateClock, 1000);
